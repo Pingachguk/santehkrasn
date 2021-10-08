@@ -8,7 +8,7 @@ import requests
 
 async def start(message: types.Message, state: FSMContext):
     markup = start_keyboard()
-    await message.answer("Hello!", reply_markup=markup)
+    await message.answer("Здравствуйте!\nДанный бот предназачен для того, чтобы Вы могли заказать услуги сантехника в г. Краснодар. Для продолжения используйте клавиатуру внизу экрана.", reply_markup=markup)
 
 async def check_id(message: types.Message):
     await message.answer(message.chat.id)
