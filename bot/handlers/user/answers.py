@@ -34,3 +34,6 @@ async def create_order(message: types.Message, state: FSMContext):
 
 async def send_price(message: types.Message, state: FSMContext):
     await message.answer(config.PRICE_LIST)
+
+async def send_channel(message: types.Message, state: FSMContext):
+    await message.answer("Канал, где выкладываются выполненные работы и отзывы.\nhttps://t.me/Alexandrsantehnik_krasnodar")

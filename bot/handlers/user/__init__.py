@@ -20,3 +20,4 @@ async def setup(dp: Dispatcher):
     dp.register_message_handler(answers.set_phone, state=UserState.set_description, is_private=True)
     dp.register_message_handler(answers.create_order, state=UserState.set_phone, is_private=True)
     dp.register_message_handler(answers.send_price, Text("🔎 Узнать цены на услуги"), state=None, is_private=True)
+    dp.register_message_handler(answers.send_channel, Text("📰 Канал с выполненными работами"), state=None, is_private=True)
